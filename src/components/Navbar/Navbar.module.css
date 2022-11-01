@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbarIcon {
+  font-size: 4rem !important;
+  color: var(--red) !important;
+  font-weight: 500 !important;
+}

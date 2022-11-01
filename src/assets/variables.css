@@ -1,0 +1,15 @@
+:root {
+    /* colors */
+    --background: #3A3335;
+    --black: #000;
+    --red: #D81E5B;
+    --beige: #FDF0D5;
+    --blue: #73BAD0;
+    --white: #fff;  
+    --gradient: linear-gradient(120.88deg, rgba(58, 51, 53, 0.6) 0%, rgba(58, 51, 53, 0) 100%);;
+    /* values */
+    
+    --black-to-beige: filter: invert(90%) sepia(28%) saturate(365%) hue-rotate(321deg) brightness(106%) contrast(98%);
+    --black-to-red: filter: invert(27%) sepia(68%) saturate(6095%) hue-rotate(328deg) brightness(87%) contrast(94%);
+  }
+  
