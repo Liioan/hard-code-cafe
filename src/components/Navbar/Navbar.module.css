@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .navbar button {
@@ -12,10 +14,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
 }
 
 .navbarIcon {
   font-size: 4rem !important;
   color: var(--red) !important;
   font-weight: 500 !important;
+  transition: 0.2s ease;
+  position: fixed;
+  cursor: pointer;
+}
+
+.navbarIcon:hover {
+  color: var(--blue) !important;
 }
