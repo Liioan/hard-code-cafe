@@ -41,6 +41,6 @@
   height: 100vh;
   width: 100vw;
   z-index: 0;
-  background-color: rgba(58, 51, 53, 0.4);
+  background-color: var(--background-alpha);
   backdrop-filter: blur(1rem);
 }

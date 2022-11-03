@@ -1,15 +1,29 @@
 //. components
 import Navbar from '../Navbar/Navbar';
 import Menu from '../Menu/Menu';
-import TypingText from '../TypingText/TypingText';
+import TypingText from './TypingText/TypingText';
+import { useState } from 'react';
 
 //. styles
 import styles from './Hero.module.css';
 
 export default function Hero() {
   const text = ['Welcome to ', 'Hard Code Cafe', 'Your place to '];
-
   const prompts = ['code', 'relax', 'drink coffee'];
+
+  const [showHeading, setShowHeading] = useState(false);
+  const [showSubheading, setShowSubheading] = useState(false);
+  const [showPrompts, setShowPrompts] = useState(false);
+
+  setTimeout(() => {
+    setShowHeading('true');
+  }, 1500);
+  setTimeout(() => {
+    setShowSubheading('true');
+  }, 3500);
+  setTimeout(() => {
+    setShowPrompts('true');
+  }, 5000);
 
   return (
     <div className={styles.hero} id='home'>
@@ -21,15 +35,17 @@ export default function Hero() {
             <TypingText text={text[0]} isReversable={false} />
           </span>
           <span className={styles.headerSpan}>
-            <TypingText text={text[1]} isReversable={false} />
+            {showHeading && <TypingText text={text[1]} isReversable={false} />}
           </span>
         </h1>
         <h2>
           <span className={styles.subHeading}>
-            <TypingText text={text[2]} isReversable={false} />
+            {showSubheading && (
+              <TypingText text={text[2]} isReversable={false} />
+            )}
           </span>
           <span className={styles.subHeading}>
-            <TypingText text={prompts} isReversable={true} />
+            {showPrompts && <TypingText text={prompts} isReversable={true} />}
           </span>
         </h2>
       </div>
