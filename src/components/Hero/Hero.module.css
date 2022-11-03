@@ -57,3 +57,23 @@
   color: var(--red);
   font-weight: 700;
 }
+
+.showMoreLink {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+
+.showMore {
+  font-size: 5rem !important;
+  font-weight: 500;
+  color: var(--blue);
+  opacity: 0.5;
+  transition: 0.2s ease;
+  translate: 0 -10px;
+}
+
+.showMore:hover {
+  opacity: 1;
+  translate: 0 0;
+}

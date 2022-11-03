@@ -49,6 +49,11 @@ export default function Hero() {
           </span>
         </h2>
       </div>
+      <a href='#about' className={styles.showMoreLink}>
+        <span className={`material-symbols-outlined ${styles.showMore}`}>
+          expand_more
+        </span>
+      </a>
     </div>
   );
 }
