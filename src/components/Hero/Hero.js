@@ -33,9 +33,13 @@ export default function Hero() {
         <h1>
           <span className={styles.headerSpan}>
             <TypingText text={text[0]} isReversable={false} />
+            {!showHeading && <span className={styles.blink}>|</span>}
           </span>
           <span className={styles.headerSpan}>
             {showHeading && <TypingText text={text[1]} isReversable={false} />}
+            {!showSubheading && showHeading && (
+              <span className={styles.blink}>|</span>
+            )}
           </span>
         </h1>
         <h2>
@@ -43,9 +47,13 @@ export default function Hero() {
             {showSubheading && (
               <TypingText text={text[2]} isReversable={false} />
             )}
+            {!showPrompts && showSubheading && (
+              <span className={styles.blink}>|</span>
+            )}
           </span>
           <span className={styles.subHeading}>
             {showPrompts && <TypingText text={prompts} isReversable={true} />}
+            {showPrompts && <span className={styles.blink}>|</span>}
           </span>
         </h2>
       </div>

@@ -11,10 +11,10 @@
 
 .header h1,
 .header h2 {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 1rem;
   padding: 1rem;
 }
@@ -39,6 +39,7 @@
   font-weight: 400;
   text-align: center;
   text-transform: none;
+  height: 4.5rem;
 }
 
 .headerSpan:nth-child(2) {
@@ -51,6 +52,7 @@
   font-weight: 400;
   font-size: 3rem;
   font-family: var(--normalText);
+  height: 4rem;
 }
 
 .subHeading:nth-child(2) {
@@ -76,4 +78,19 @@
 .showMore:hover {
   opacity: 1;
   translate: 0 0;
+}
+.blink {
+  animation: blink 1s ease infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
