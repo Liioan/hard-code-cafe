@@ -81,6 +81,7 @@
 }
 .blink {
   animation: blink 1s ease infinite;
+  margin-left: -8px;
 }
 
 @keyframes blink {
