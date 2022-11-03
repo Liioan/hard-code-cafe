@@ -32,7 +32,7 @@ export default function Menu() {
             {links.map(link => (
               <div className={styles.menuItem} key={link.linkLocation}>
                 <a href={`#${link.linkLocation}`} onClick={toggleMenu}>
-                  <span>{link.linkName}</span>
+                  <span className={styles.link}>{link.linkName}</span>
                   <span className='material-symbols-outlined'>{link.icon}</span>
                 </a>
               </div>

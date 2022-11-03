@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Source+Code+Pro:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Code+Pro:wght@200;300;400;500;600;700&display=swap');
 @import url('./variables.css');
 
 *,
@@ -7,13 +7,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Source Code Pro', monospace;
+  font-family: var(--normalText);
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--heading);
   font-weight: 700;
   text-transform: capitalize;
 }
