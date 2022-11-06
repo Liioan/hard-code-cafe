@@ -1,10 +1,10 @@
-import { useNavbar } from '../../hooks/useNavbar';
+import { useNavbar } from '../../../hooks/useNavbar';
 import { motion, AnimatePresence } from 'framer-motion';
 
 //.components
 
 //. assets
-import logo from '../../assets/logo.png';
+import logo from '../../../assets/logo.png';
 
 //. styles
 import styles from './Navbar.module.css';

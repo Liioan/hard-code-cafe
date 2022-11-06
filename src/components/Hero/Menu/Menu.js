@@ -1,4 +1,4 @@
-import { useNavbar } from '../../hooks/useNavbar';
+import { useNavbar } from '../../../hooks/useNavbar';
 import { motion, AnimatePresence } from 'framer-motion';
 
 //. styles

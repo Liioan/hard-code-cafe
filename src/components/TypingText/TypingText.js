@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function TypingText({ text, isReversable }) {
+export default function TypingText({ text, isReversable = false }) {
   let words;
   if (isReversable) {
     words = [...text];

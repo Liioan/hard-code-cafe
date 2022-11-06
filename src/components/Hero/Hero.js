@@ -1,7 +1,7 @@
 //. components
-import Navbar from '../Navbar/Navbar';
-import Menu from '../Menu/Menu';
-import TypingText from './TypingText/TypingText';
+import Navbar from './Navbar/Navbar';
+import Menu from './Menu/Menu';
+import TypingText from '../TypingText/TypingText';
 import { useState } from 'react';
 
 //. styles
@@ -32,11 +32,11 @@ export default function Hero() {
       <div className={styles.header}>
         <h1>
           <span className={styles.headerSpan}>
-            <TypingText text={text[0]} isReversable={false} />
+            <TypingText text={text[0]} />
             {!showHeading && <span className={styles.blink}>|</span>}
           </span>
           <span className={styles.headerSpan}>
-            {showHeading && <TypingText text={text[1]} isReversable={false} />}
+            {showHeading && <TypingText text={text[1]} />}
             {!showSubheading && showHeading && (
               <span className={styles.blink}>|</span>
             )}
@@ -44,9 +44,7 @@ export default function Hero() {
         </h1>
         <h2>
           <span className={styles.subHeading}>
-            {showSubheading && (
-              <TypingText text={text[2]} isReversable={false} />
-            )}
+            {showSubheading && <TypingText text={text[2]} />}
             {!showPrompts && showSubheading && (
               <span className={styles.blink}>|</span>
             )}
