@@ -10,7 +10,7 @@ export default function About() {
   return (
     <div className={styles.about} id='about'>
       <motion.h2
-        className={styles.heading}
+        className='heading'
         initial={{ opacity: 0, translateY: '-100%' }}
         whileInView={{ opacity: 1, translateY: 0 }}
         viewport={{ once: true }}

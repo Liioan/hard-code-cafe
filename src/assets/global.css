@@ -18,6 +18,22 @@ h3 {
   text-transform: capitalize;
 }
 
+.heading {
+  font-size: 5rem;
+  margin-top: 10rem;
+  color: var(--beige);
+  text-align: center;
+}
+
+.heading:after {
+  content: '';
+  display: block;
+  width: 25rem;
+  height: 0.7rem;
+  border-radius: 10rem;
+  background-color: var(--red);
+}
+
 html,
 body {
   overflow-x: hidden;
