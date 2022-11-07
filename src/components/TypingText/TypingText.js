@@ -39,7 +39,7 @@ export default function TypingText({ text, isReversable = false }) {
       isReversable
         ? Math.max(
             reverse ? 75 : subIndex === words[index].length ? 1000 : 150,
-            parseInt(Math.random() * 350)
+            parseInt(Math.random() * 150)
           )
         : 100
     );
