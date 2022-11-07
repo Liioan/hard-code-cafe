@@ -1,10 +1,7 @@
-import { motion, animationPresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 //. assets
 import Img from '../../assets/img/aboutUs.png';
-
-//. components
-import TypingText from '../TypingText/TypingText';
 
 //. styles
 import styles from './About.module.css';
@@ -14,21 +11,36 @@ export default function About() {
     <div className={styles.about} id='about'>
       <motion.h2
         className={styles.heading}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.5, ease: 'backOut', delay: 0.2 }}
+        initial={{ opacity: 0, translateY: '-100%' }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: 'anticipate', delay: 0.2 }}
       >
-        <TypingText text='About us' />
+        About Us
       </motion.h2>
-      <img src={Img} alt='' className={styles.img} />
-      <p className={styles.desc}>
+      <motion.img
+        src={Img}
+        alt=''
+        className={styles.img}
+        initial={{ translateX: '100%', opacity: 0 }}
+        whileInView={{ translateX: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: 'anticipate', delay: 0.4 }}
+      />
+      <motion.p
+        className={styles.desc}
+        initial={{ translateX: '-100%', opacity: 0 }}
+        whileInView={{ translateX: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: 'anticipate', delay: 0.6 }}
+      >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad incidunt at,
         error facilis natus vel eaque modi laudantium saepe voluptate quas
         necessitatibus repellendus explicabo nisi commodi consequatur atque
         vitae perspiciatis libero totam quod eligendi mollitia, ab voluptatibus?
         Dignissimos cupiditate nobis possimus autem quas quis nulla atque
         laborum perspiciatis labore. Laborum.
-      </p>
+      </motion.p>
     </div>
   );
 }

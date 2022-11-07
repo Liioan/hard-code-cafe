@@ -15,20 +15,35 @@ export default function Navbar() {
   const toggleMenu = () => {
     changeMenuState(!isMenuOpened);
   };
-
   return (
-    <div className={styles.navbar}>
+    <motion.div
+      className={styles.navbar}
+      initial={{ translateY: '-100%' }}
+      animate={{ translateY: 0 }}
+      transition={{ duration: 1, ease: 'anticipate' }}
+    >
       <a href='#home'>
-        <img src={logo} alt='' />
+        <motion.img
+          src={logo}
+          alt=''
+          initial={{ translateX: '-200%' }}
+          animate={{ translateX: 0 }}
+          transition={{ duration: 1, ease: 'anticipate', delay: 1 }}
+        />
       </a>
-      <button onClick={toggleMenu}>
+      <motion.button
+        onClick={toggleMenu}
+        initial={{ translateX: '200%' }}
+        animate={{ translateX: 0 }}
+        transition={{ duration: 1, ease: 'anticipate', delay: 0.5 }}
+      >
         <AnimatePresence>
           {!isMenuOpened && (
             <motion.span
               initial={{ translateY: '-100%', opacity: 0 }}
               animate={{ translateY: 0, opacity: 1 }}
               exit={{ translateY: '-100%', opacity: 0 }}
-              transition={{ duration: 0.01 }}
+              transition={{ duration: 0.1 }}
               className={`material-symbols-outlined ${styles.navbarIcon}`}
             >
               menu
@@ -41,14 +56,14 @@ export default function Navbar() {
               initial={{ translateY: '100%', opacity: 0 }}
               animate={{ translateY: 0, opacity: 1 }}
               exit={{ translateY: '100%', opacity: 0 }}
-              transition={{ duration: 0.01 }}
+              transition={{ duration: 0.1 }}
               className={`material-symbols-outlined ${styles.navbarIcon}`}
             >
               close
             </motion.span>
           )}
         </AnimatePresence>
-      </button>
-    </div>
+      </motion.button>
+    </motion.div>
   );
 }

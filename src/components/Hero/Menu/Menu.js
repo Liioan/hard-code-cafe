@@ -27,7 +27,7 @@ export default function Menu() {
             initial={{ translateX: '100vw', opacity: 0 }}
             animate={{ translateX: 0, opacity: 1 }}
             exit={{ translateX: '100%', opacity: 0 }}
-            transition={{ duration: 0.5, ease: 'backOut' }}
+            transition={{ duration: 0.5, ease: 'anticipate' }}
           >
             {links.map(link => (
               <div className={styles.menuItem} key={link.linkLocation}>
