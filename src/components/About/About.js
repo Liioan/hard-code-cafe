@@ -25,14 +25,14 @@ export default function About() {
         initial={{ translateX: '100%', opacity: 0 }}
         whileInView={{ translateX: 0, opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5, ease: 'anticipate', delay: 0.4 }}
+        transition={{ duration: 0.8, ease: 'anticipate', delay: 0.4 }}
       />
       <motion.p
         className={styles.desc}
         initial={{ translateX: '-100%', opacity: 0 }}
         whileInView={{ translateX: 0, opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5, ease: 'anticipate', delay: 0.6 }}
+        transition={{ duration: 0.8, ease: 'anticipate', delay: 0.6 }}
       >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad incidunt at,
         error facilis natus vel eaque modi laudantium saepe voluptate quas

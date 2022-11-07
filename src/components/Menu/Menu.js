@@ -36,7 +36,7 @@ export default function Menu() {
       img: CakesImg,
       itemsList: [
         'Chocolate Cake',
-        'Japanese Cheesecake',
+        'Cheesecake',
         'Napoleon Cake',
         'Pavlova Cake',
         'Apple Pie',

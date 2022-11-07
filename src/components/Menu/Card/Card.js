@@ -10,7 +10,7 @@ export default function Card({ text, img, items }) {
       initial={{ opacity: 0, translateX: '100%' }}
       whileInView={{ opacity: 1, translateX: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5, ease: 'anticipate' }}
+      transition={{ duration: 0.8, ease: 'anticipate' }}
     >
       <h3 className={styles.sectionName}>
         <span>{'<'}</span>
@@ -18,7 +18,7 @@ export default function Card({ text, img, items }) {
         <span>{' />'}</span>
       </h3>
       <div className={styles.list}>
-        <ol>
+        <ol start='0'>
           {items.map(item => (
             <li key={item}>{item}</li>
           ))}
