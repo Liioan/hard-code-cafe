@@ -1,9 +1,17 @@
+import { motion } from 'framer-motion';
+
 //. styles
 import styles from './Card.module.css';
 
 export default function Card({ text, img, items }) {
   return (
-    <div className={styles.card}>
+    <motion.div
+      className={styles.card}
+      initial={{ opacity: 0, translateX: '100%' }}
+      whileInView={{ opacity: 1, translateX: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, ease: 'anticipate' }}
+    >
       <h3 className={styles.sectionName}>
         <span>{'<'}</span>
         {text}
@@ -21,6 +29,6 @@ export default function Card({ text, img, items }) {
         className={styles.background}
         style={{ background: `url(${img})` }}
       ></div>
-    </div>
+    </motion.div>
   );
 }
