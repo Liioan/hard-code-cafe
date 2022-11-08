@@ -45,7 +45,7 @@ export default function TypingText({ text, isReversable = false }) {
     );
 
     return () => clearTimeout(timeout);
-  }, [subIndex, index, reverse]);
+  }, [subIndex, index, reverse, isReversable, words]);
 
   return <>{words[index].substring(0, subIndex)}</>;
 }
