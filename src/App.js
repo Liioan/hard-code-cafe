@@ -6,6 +6,7 @@ import About from './components/About/About';
 import Menu from './components/Menu/Menu';
 import Location from './components/Location/Location';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
@@ -14,7 +15,7 @@ import './assets/global.css';
 
 function App() {
   return (
-    <div style={{ height: '1000vh' }}>
+    <div>
       <NavbarProvider>
         <ScrollToTop />
         <Hero />
@@ -22,6 +23,7 @@ function App() {
         <Menu />
         <Location />
         <Contact />
+        <Footer />
       </NavbarProvider>
     </div>
   );

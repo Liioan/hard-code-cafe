@@ -1,0 +1,45 @@
+.footer {
+  margin-top: 6rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  color: var(--beige-alpha);
+  padding: 2rem;
+  gap: 2rem;
+  font-weight: 600;
+}
+
+.footer:before {
+  content: '';
+  display: block;
+  width: 90%;
+  height: 0.5rem;
+  background-color: var(--red);
+  border-radius: 2rem;
+}
+
+.footer span {
+  text-align: center;
+}
+
+.link {
+  transition: 0.2s ease !important;
+}
+
+.link:hover {
+  color: var(--red);
+}
+
+.img {
+  filter: var(--black-to-beige);
+  width: 3rem;
+  opacity: 0.2;
+  transition: 0.2s ease;
+}
+
+.img:hover {
+  opacity: 1;
+  filter: var(--black-to-red);
+}
