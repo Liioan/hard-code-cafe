@@ -36,7 +36,9 @@ export default function Location() {
       >
         <h3 className={styles.subheader}>Come visit us!</h3>
         <p className={styles.addres}>
-          Our addres: Ignacego Kraszewskiego 11, 43-400 Cieszyn, Poland
+          <a href='https://www.google.com/maps/place/Ignacego+Kraszewskiego+11,+43-400+Cieszyn/@49.7412402,18.6324464,17z/data=!4m5!3m4!1s0x4714040fa566672d:0x59e236a224dca6b9!8m2!3d49.7409317!4d18.6328005'>
+            Our addres: Ignacego Kraszewskiego 11, 43-400 Cieszyn, Poland
+          </a>
         </p>
       </motion.div>
     </div>

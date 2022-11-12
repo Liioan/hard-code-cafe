@@ -5,6 +5,8 @@ import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Menu from './components/Menu/Menu';
 import Location from './components/Location/Location';
+import Contact from './components/Contact/Contact';
+
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 //. styles
@@ -14,11 +16,12 @@ function App() {
   return (
     <div style={{ height: '1000vh' }}>
       <NavbarProvider>
-        <Hero />
         <ScrollToTop />
+        <Hero />
         <About />
         <Menu />
         <Location />
+        <Contact />
       </NavbarProvider>
     </div>
   );

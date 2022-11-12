@@ -1,0 +1,13 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.desc {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--beige);
+}
