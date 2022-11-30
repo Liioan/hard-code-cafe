@@ -6,15 +6,41 @@
   gap: 6rem;
 }
 
+.aboutContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .img {
-  width: 90%;
+  width: 30rem;
   border: 4px solid var(--red);
   border-radius: 124px 86px 124px 50px;
 }
 
 .desc {
-  width: 90%;
+  width: 30rem;
   font-size: 2rem;
   color: var(--beige);
   font-weight: 400;
+}
+
+@media screen and (min-width: 900px) {
+  .aboutContent {
+    flex-direction: row;
+    justify-self: space-around;
+    gap: 5rem;
+  }
+
+  .img {
+    max-width: 45rem;
+    min-width: 30rem;
+    width: auto;
+  }
+
+  .desc {
+    width: 40%;
+  }
 }

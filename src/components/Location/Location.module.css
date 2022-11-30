@@ -6,6 +6,14 @@
   gap: 6rem;
 }
 
+.locationContent {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 6rem;
+}
+
 .img {
   border-radius: 72px 133px 72px 133px;
   border: 4px solid var(--red);
@@ -15,6 +23,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 30rem;
 }
 
 .subheader {
@@ -32,4 +41,24 @@
 
 .addres:hover {
   color: var(--blue);
+}
+
+@media screen and (min-width: 900px) {
+  .locationContent {
+    flex-direction: row;
+  }
+  .img {
+    max-width: 45rem;
+    width: auto;
+  }
+
+  .subheader {
+    text-align: start;
+    max-width: 45rem;
+  }
+
+  .addres {
+    text-align: start;
+    max-width: 45rem;
+  }
 }
