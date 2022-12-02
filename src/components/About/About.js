@@ -35,12 +35,10 @@ export default function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: 'anticipate', delay: 0.6 }}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad incidunt
-          at, error facilis natus vel eaque modi laudantium saepe voluptate quas
-          necessitatibus repellendus explicabo nisi commodi consequatur atque
-          vitae perspiciatis libero totam quod eligendi mollitia, ab
-          voluptatibus? Dignissimos cupiditate nobis possimus autem quas quis
-          nulla atque laborum perspiciatis labore. Laborum.
+          Welcome to Hard Code Cafe, a calm place for everyone (especially every
+          developer). We aim to provide a relaxing place of work with no
+          destractions and with great coffee. We also offer other drinks, cakes
+          made with love as well as fast wifi.
         </motion.p>
       </div>
     </div>
