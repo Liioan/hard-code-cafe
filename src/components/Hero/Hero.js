@@ -2,6 +2,7 @@
 import Navbar from './Navbar/Navbar';
 import Menu from './Menu/Menu';
 import TypingText from '../TypingText/TypingText';
+import Indicator from './Indicator/Indicator';
 import { useState } from 'react';
 
 //. styles
@@ -33,25 +34,21 @@ export default function Hero() {
         <h1>
           <span className={styles.headerSpan}>
             <TypingText text={text[0]} />
-            {!showHeading && <span className={styles.blink}>|</span>}
+            {!showHeading && <Indicator />}
           </span>
           <span className={styles.headerSpan}>
             {showHeading && <TypingText text={text[1]} />}
-            {!showSubheading && showHeading && (
-              <span className={styles.blink}>|</span>
-            )}
+            {!showSubheading && showHeading && <Indicator />}
           </span>
         </h1>
         <h2>
           <span className={styles.subHeading}>
             {showSubheading && <TypingText text={text[2]} />}
-            {!showPrompts && showSubheading && (
-              <span className={styles.blink}>|</span>
-            )}
+            {!showPrompts && showSubheading && <Indicator />}
           </span>
           <span className={styles.subHeading}>
             {showPrompts && <TypingText text={prompts} isReversable={true} />}
-            {showPrompts && <span className={styles.blink}>|</span>}
+            {showPrompts && <Indicator />}
           </span>
         </h2>
       </div>

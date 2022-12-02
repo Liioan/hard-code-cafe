@@ -11,3 +11,31 @@
   text-align: center;
   color: var(--beige);
 }
+
+.contactContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .contact {
+    min-height: 80vh;
+  }
+
+  .contactContent {
+    flex-direction: row;
+    justify-self: space-around !important;
+  }
+
+  .form {
+    width: 40%;
+  }
+  .desc {
+    font-size: 3.5rem;
+    width: 40%;
+    text-align: start;
+  }
+}

@@ -11,6 +11,7 @@
   right: 2rem;
   z-index: 2;
   background-color: var(--background);
+  transition: 0.2s ease;
 }
 
 .container a {
@@ -21,4 +22,10 @@
   font-size: 4rem !important;
   font-weight: 500;
   color: var(--red);
+}
+
+.container:hover,
+.container:hover span {
+  border-color: var(--blue);
+  color: var(--blue);
 }

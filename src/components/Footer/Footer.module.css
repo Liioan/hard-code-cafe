@@ -11,6 +11,15 @@
   font-weight: 600;
 }
 
+.footerContent,
+.footerContent div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .footer:before {
   content: '';
   display: block;
@@ -42,4 +51,16 @@
 .img:hover {
   opacity: 1;
   filter: var(--black-to-red);
+}
+
+@media screen and (min-width: 1000px) {
+  .footerContent,
+  .footerContent div {
+    flex-direction: row;
+  }
+
+  .footerContent {
+    width: 90%;
+    justify-content: space-between;
+  }
 }

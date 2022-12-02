@@ -16,6 +16,7 @@
   .menuList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: minmax(10rem, auto);
+    gap: 5vw;
   }
 }

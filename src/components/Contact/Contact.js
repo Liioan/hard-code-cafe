@@ -19,20 +19,22 @@ export default function Contact() {
         Contact
       </motion.h2>
 
-      <motion.div
-        className={styles.desc}
-        initial={{ opacity: 0, translateX: '100%' }}
-        whileInView={{ opacity: 1, translateX: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, ease: 'anticipate', delay: 0.2 }}
-      >
-        <p>Want to book a table?</p>
-        <p>Or maybe you want to suggest something?</p>
-        <p>In any case, contact us!</p>
-      </motion.div>
+      <div className={styles.contactContent}>
+        <motion.div
+          className={styles.desc}
+          initial={{ opacity: 0, translateX: '100%' }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: 'anticipate', delay: 0.2 }}
+        >
+          <p>Want to book a table?</p>
+          <p>Or maybe you want to suggest something?</p>
+          <p>In any case, contact us!</p>
+        </motion.div>
 
-      <div className={styles.form}>
-        <Form />
+        <div className={styles.form}>
+          <Form />
+        </div>
       </div>
     </div>
   );
