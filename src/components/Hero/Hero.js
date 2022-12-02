@@ -17,13 +17,13 @@ export default function Hero() {
   const [showPrompts, setShowPrompts] = useState(false);
 
   setTimeout(() => {
-    setShowHeading('true');
+    setShowHeading(true);
   }, 1500);
   setTimeout(() => {
-    setShowSubheading('true');
+    setShowSubheading(true);
   }, 3500);
   setTimeout(() => {
-    setShowPrompts('true');
+    setShowPrompts(true);
   }, 5000);
 
   return (

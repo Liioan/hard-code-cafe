@@ -12,7 +12,6 @@ export default function Footer() {
           <span>
             Created by{' '}
             <a
-              without
               rel='noreferrer'
               href='https://davidbijok.netlify.app'
               target='_blank'
@@ -25,7 +24,6 @@ export default function Footer() {
           <span>
             Photos by:{' '}
             <a
-              without
               rel='noreferrer'
               href='https://www.pexels.com/@marta-dzedyshko-1042863/'
               target='_blank'
@@ -35,7 +33,6 @@ export default function Footer() {
             </a>
             ,{' '}
             <a
-              without
               rel='noreferrer'
               href='https://www.pexels.com/@teresa-jang-6930116/'
               target='_blank'
@@ -46,11 +43,7 @@ export default function Footer() {
           </span>
         </div>
 
-        <a
-          without
-          rel='noreferrer'
-          href='https://github.com/liioan/hard-code-cafe'
-        >
+        <a rel='noreferrer' href='https://github.com/liioan/hard-code-cafe'>
           <img src={GitHubIcon} alt='' className={styles.img} />
         </a>
       </div>
