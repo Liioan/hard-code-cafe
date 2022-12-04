@@ -21,19 +21,18 @@ export default function ScrollToTop() {
     <>
       <AnimatePresence>
         {visible && (
-          <motion.div
+          <motion.a
+            href='#home'
             className={styles.container}
             initial={{ opacity: 0, translateX: '100%' }}
             animate={{ opacity: 1, translateX: 0 }}
             exit={{ opacity: 0, translateX: '100%' }}
             transition={{ ease: 'anticipate' }}
           >
-            <a href='#home'>
-              <span className={`material-symbols-outlined ${styles.icon}`}>
-                expand_less
-              </span>
-            </a>
-          </motion.div>
+            <span className={`material-symbols-outlined ${styles.icon}`}>
+              expand_less
+            </span>
+          </motion.a>
         )}
       </AnimatePresence>
     </>
