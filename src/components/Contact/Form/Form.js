@@ -51,7 +51,6 @@ export default function Form() {
           whileInView={{ opacity: 1, translateX: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, ease: 'anticipate', delay: 0.2 }}
-          required
         />
       </form>
     </div>
