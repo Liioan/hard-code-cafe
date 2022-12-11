@@ -37,7 +37,7 @@ export default function About() {
         >
           Welcome to Hard Code Cafe, a calm place for everyone (especially every
           developer). We aim to provide a relaxing place of work with no
-          destractions and with great coffee. We also offer other drinks, cakes
+          distractions and with great coffee. We also offer other drinks, cakes
           made with love as well as fast wifi.
         </motion.p>
       </div>
