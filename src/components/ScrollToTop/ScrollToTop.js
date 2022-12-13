@@ -29,9 +29,9 @@ export default function ScrollToTop() {
             exit={{ opacity: 0, translateX: '100%' }}
             transition={{ ease: 'anticipate' }}
           >
-            <span className={`material-symbols-outlined ${styles.icon}`}>
+            <button className={`material-symbols-outlined ${styles.icon}`}>
               expand_less
-            </span>
+            </button>
           </motion.a>
         )}
       </AnimatePresence>

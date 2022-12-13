@@ -8,7 +8,7 @@ import styles from './Contact.module.css';
 
 export default function Contact() {
   return (
-    <div className={styles.contact} id='contact'>
+    <section className={styles.contact} id='contact'>
       <motion.h2
         className='heading'
         initial={{ opacity: 0, translateY: '-100%' }}
@@ -36,6 +36,6 @@ export default function Contact() {
           <Form />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

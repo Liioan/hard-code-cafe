@@ -8,7 +8,7 @@ import styles from './About.module.css';
 
 export default function About() {
   return (
-    <div className={styles.about} id='about'>
+    <section className={styles.about} id='about'>
       <motion.h2
         className='heading'
         initial={{ opacity: 0, translateY: '-100%' }}
@@ -41,6 +41,6 @@ export default function About() {
           made with love as well as fast wifi.
         </motion.p>
       </div>
-    </div>
+    </section>
   );
 }

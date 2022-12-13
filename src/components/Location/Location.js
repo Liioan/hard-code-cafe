@@ -8,7 +8,7 @@ import styles from './Location.module.css';
 
 export default function Location() {
   return (
-    <div className={styles.location} id='location'>
+    <section className={styles.location} id='location'>
       <motion.h2
         className='heading'
         initial={{ opacity: 0, translateY: '-100%' }}
@@ -43,6 +43,6 @@ export default function Location() {
           </p>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }

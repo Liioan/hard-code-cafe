@@ -19,10 +19,12 @@
   font-size: 4rem !important;
   font-weight: 500;
   color: var(--red);
+  background-color: transparent;
+  border: none;
 }
 
 .container:hover,
-.container:hover span {
+.container:hover button {
   border-color: var(--blue);
   color: var(--blue);
 }

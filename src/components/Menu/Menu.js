@@ -55,7 +55,7 @@ export default function Menu() {
   ];
 
   return (
-    <div className={styles.menu} id='menu'>
+    <main className={styles.menu} id='menu'>
       <motion.h2
         className='heading'
         initial={{ opacity: 0, translateY: '-100%' }}
@@ -75,6 +75,6 @@ export default function Menu() {
           />
         ))}
       </div>
-    </div>
+    </main>
   );
 }

@@ -27,7 +27,7 @@ export default function Hero() {
   }, 5000);
 
   return (
-    <div className={styles.hero} id='home'>
+    <section className={styles.hero} id='home'>
       <Navbar />
       <Menu />
       <div className={styles.header}>
@@ -57,6 +57,6 @@ export default function Hero() {
           expand_more
         </span>
       </a>
-    </div>
+    </section>
   );
 }

@@ -5,7 +5,7 @@ import styles from './Card.module.css';
 
 export default function Card({ text, img, items }) {
   return (
-    <motion.div
+    <motion.section
       className={styles.card}
       initial={{ opacity: 0, translateX: '100%' }}
       whileInView={{ opacity: 1, translateX: 0 }}
@@ -29,6 +29,6 @@ export default function Card({ text, img, items }) {
         className={styles.background}
         style={{ background: `url(${img})` }}
       ></div>
-    </motion.div>
+    </motion.section>
   );
 }

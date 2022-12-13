@@ -16,7 +16,7 @@ export default function Navbar() {
     changeMenuState(!isMenuOpened);
   };
   return (
-    <motion.div
+    <motion.nav
       className={styles.navbar}
       initial={{ translateY: '-100%' }}
       animate={{ translateY: 0 }}
@@ -64,6 +64,6 @@ export default function Navbar() {
           )}
         </AnimatePresence>
       </motion.button>
-    </motion.div>
+    </motion.nav>
   );
 }
