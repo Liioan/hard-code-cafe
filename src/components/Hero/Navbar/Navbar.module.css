@@ -21,6 +21,10 @@
   padding: 2rem;
 }
 
+.logo {
+  width: 64px;
+}
+
 .navbarIcon {
   font-size: 4rem !important;
   color: var(--red) !important;

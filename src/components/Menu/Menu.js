@@ -65,7 +65,7 @@ export default function Menu() {
       >
         Menu
       </motion.h2>
-      <div className={styles.menuList}>
+      <section className={styles.menuList}>
         {MenuSections.map(section => (
           <Card
             text={section.name}
@@ -74,7 +74,7 @@ export default function Menu() {
             key={section.name}
           />
         ))}
-      </div>
+      </section>
     </main>
   );
 }

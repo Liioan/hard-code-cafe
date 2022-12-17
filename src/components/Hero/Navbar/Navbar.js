@@ -24,6 +24,7 @@ export default function Navbar() {
     >
       <a href='#home'>
         <motion.img
+          className={styles.logo}
           src={logo}
           alt=''
           initial={{ translateX: '-200%' }}
