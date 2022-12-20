@@ -43,3 +43,8 @@
   padding: 0 !important;
   cursor: pointer;
 }
+
+.input:last-child:hover {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
